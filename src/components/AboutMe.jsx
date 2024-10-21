@@ -24,7 +24,7 @@ function AboutMe() {
                     <img src={userImage} alt="" className='w-64 sm:w-80 rounded-3xl max-w-none' />
 
                     <div className='bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center'>
-                        <img src={circularText} alt="" />
+                        <img src={circularText} alt="" className="animate-spin_slow"/>
                         <img src={devIcon} className='w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' alt="" />
                     </div>
                 </div>
@@ -41,7 +41,7 @@ function AboutMe() {
                         <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]'>
                             <img src={eduIcon} alt="" className='w-7 mt-3' />
                             <h3 className='my-4 font-semibold text-gray-700'>Education</h3>
-                            <p className='text-gray-600 text-sm'>Bachelor's in Computer Science</p>
+                            <p className='text-gray-600 text-sm'>Bachelor's in Computer Applications</p>
                         </li>
 
                         <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]'>

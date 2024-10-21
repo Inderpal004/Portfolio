@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden font-Outfit leading-7'>
       <Navbar/>
       <Home />
       <AboutMe/>
