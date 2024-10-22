@@ -10,7 +10,7 @@ function Services() {
             <p className='text-center max-w-2xl mx-auto mt-5 mb-12'>I'm a frontend developer from Barnala, Punjab. I'm a fresher exploring opportunities to grow and learn.</p>
 
             <div className='grid grid-cols-auto gap-6 my-10'>
-                <div className='border cursor-pointer border-gray-400 rounded-lg px-8 py-12 hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]'>
+                <div className='border cursor-pointer border-gray-400 rounded-lg px-8 py-12 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black'>
                     <div className='flex items-center justify-center w-12 h-12 bg-[#ff388b] rounded-md'>
                         <i className="ri-code-s-slash-line text-white text-[20px]"></i>
                     </div>
@@ -18,7 +18,7 @@ function Services() {
                     <p className='text-sm text-gray-600 leading-5'>Emphasize your skills in building tailor-made websites from scratch, ensuring that they meet the unique needs and objectives of your clients...</p>
                     <a href="" className='flex items-center gap-2 text-sm mt-5'>Read more <img src={rightArrow} alt="" className='w-4' /></a>
                 </div>
-                <div className='border cursor-pointer border-gray-400 rounded-lg px-8 py-12 hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]'>
+                <div className='border cursor-pointer border-gray-400 rounded-lg px-8 py-12 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black'>
                 <div className='flex items-center justify-center w-12 h-12 bg-[#ff388b] rounded-md'>
                         <i className="ri-crop-line text-white text-[20px]"></i>
                     </div>
@@ -26,7 +26,7 @@ function Services() {
                     <p className='text-sm text-gray-600 leading-5'>Highlight your ability to create websites that look and function seamlessly on various devices, including desktops, tablets, and smartphones....</p>
                     <a href="" className='flex items-center gap-2 text-sm mt-5'>Read more <img src={rightArrow} alt="" className='w-4' /></a>
                 </div>
-                <div className='border cursor-pointer border-gray-400 rounded-lg px-8 py-12 hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]'>
+                <div className='border cursor-pointer border-gray-400 rounded-lg px-8 py-12 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black'>
                 <div className='flex items-center justify-center w-12 h-12 bg-[#ff388b] rounded-md'>
                         <i className="ri-window-fill text-white text-[20px]"></i>
                     </div>

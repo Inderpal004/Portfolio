@@ -1,5 +1,5 @@
 import React from 'react';
-import userImage from "/images/pf2.jpg";
+import userImage from "/images/pf2.jpeg";
 import codeIcon from "/images/code-icon.png";
 import eduIcon from "/images/edu-icon.png";
 import projectIcon from "/images/project-icon.png";
@@ -31,27 +31,27 @@ function AboutMe() {
                 <div className='flex-1'>
                     <p className='mb-10 max-w-2xl'>I am a passionate frontend developer eager to kickstart my career. I look forward to gaining hands-on experience, contributing to impactful projects, and growing with dynamic organizations.</p>
 
-                    <ul className='grid grid-cols-1 sm:grid-cols-auto gap-6 max-w-2xl'>
-                        <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]'>
+                    <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
+                        <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black'>
                             <img src={codeIcon} alt="" className='w-7 mt-3' />
                             <h3 className='my-4 font-semibold text-gray-700'>Languages</h3>
                             <p className='text-gray-600 text-sm'>HTML, CSS, Tailwind CSS, JavaScript, React Js, Next Js</p>
                         </li>
 
-                        <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]'>
+                        <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black'>
                             <img src={eduIcon} alt="" className='w-7 mt-3' />
                             <h3 className='my-4 font-semibold text-gray-700'>Education</h3>
                             <p className='text-gray-600 text-sm'>Bachelor's in Computer Applications</p>
                         </li>
 
-                        <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]'>
+                        <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black'>
                             <img src={projectIcon} alt="" className='w-7 mt-3' />
                             <h3 className='my-4 font-semibold text-gray-700'>Projects</h3>
                             <p className='text-gray-600 text-sm'>Built more than 5 projects</p>
                         </li>
                     </ul>
 
-                    <ul className='my-6 flex items-center gap-3 sm:gap-5'>
+                    <ul className='my-6 flex flex-wrap items-center gap-3 sm:gap-5'>
                         <li className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'><img src={html} alt="" className='w-5 sm:w-7' /></li>
                         <li className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'><img src={css} alt="" className='w-5 sm:w-7' /></li>
                         <li className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'><img src={js} alt="" className='w-5 sm:w-7' /></li>

@@ -5,8 +5,9 @@ import moonIcon from "/images/moon_icon.png";
 import headerBgColor from "/images/header-bg-color.png";
 import menuBlack from "/images/menu-black.png";
 import closeBlack from "/images/close-black.png";
+import sunIcon from "/images/sun_icon.png";
 
-function Navbar() {
+function Navbar({darkMode,toggleTheme}) {
     const [openMenu, setOpenMenu] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const navRef = useRef(null);
@@ -27,7 +28,7 @@ function Navbar() {
 
     return (
         <>
-            <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+            <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
                 <img src={headerBgColor} alt="" className="w-full" />
             </div>
 
@@ -43,8 +44,8 @@ function Navbar() {
                 </ul>
 
                 <div className="flex items-center gap-4">
-                    <button>
-                        <img src={moonIcon} alt="mode" className="w-6" />
+                    <button onClick={()=> toggleTheme()}>
+                        <img src={darkMode ? sunIcon : moonIcon} alt="mode" className="w-6" />
                     </button>
                     <a
                         className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
