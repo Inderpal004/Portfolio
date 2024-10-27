@@ -14,8 +14,8 @@ function Home() {
         <p className='max-w-2xl mx-auto'>I'm a frontend developer from Barnala, Punjab. I'm a fresher exploring opportunities to grow and learn.</p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'> 
-            <a href="#contact" className='px-10 py-3 border text-white rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-wrap flex items-center gap-2'>contact me <img src={rightArrowWhite} alt="" className='w-4'/></a>
-            <a href="/images/logo.png" download className='px-10 py-3 border bg-white rounded-full border-gray-500  text-wrap flex items-center gap-2'>my resume <img src={downloadIcon} alt="" className='w-4'/></a>
+            <a href="#contact" className='px-10 py-3 border text-white rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-wrap flex items-center gap-2 dark:border-none'>contact me <img src={rightArrowWhite} alt="" className='w-4'/></a>
+            <a href="/images/logo.png" download className='px-10 py-3 border bg-white rounded-full border-gray-500  text-wrap flex items-center gap-2 dark:text-black'>my resume <img src={downloadIcon} alt="" className='w-4'/></a>
         </div>
       </div>
     </>

@@ -1,45 +1,41 @@
-import React, { useEffect, useState } from 'react'
-import Home from './components/Home'
-import Navbar from "./components/Navbar"
-import AboutMe from './components/AboutMe'
-import Services from './components/Services'
-import MyWork from './components/MyWork'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import React, { useEffect, useState } from 'react';
+import Home from './components/Home';
+import Navbar from "./components/Navbar";
+import AboutMe from './components/AboutMe';
+import Services from './components/Services';
+import MyWork from './components/MyWork';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme === 'dark' || 
+      (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  });
 
-  const [darkMode,setDarkMode] = useState(false);
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', darkMode);
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+  }, [darkMode]);
 
-  useEffect(()=>{
-    document.documentElement.classList.toggle(
-      'dark',
-      localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    )
-  },[]);
-
-  function toggleTheme(){
-    document.documentElement.classList.toggle('dark')
-    if(document.documentElement.classList.contains('dark')){
-      localStorage.theme = 'dark';
-      setDarkMode(true);
-    }else{
-      localStorage.theme = 'light';
-      setDarkMode(false);
-    }
+  function toggleTheme() {
+    setDarkMode((prevMode) => !prevMode);
   }
+
+  console.log("App.jsx",darkMode)
 
   return (
     <div className='overflow-x-hidden font-Outfit leading-7 dark:bg-darkTheme dark:text-white'>
-      <Navbar darkMode={darkMode} toggleTheme={toggleTheme}/>
+      <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
       <Home />
-      <AboutMe/>
-      <Services/>
-      <MyWork/>
-      <Contact/>
-      <Footer/>
+      <AboutMe darkMode={darkMode} />
+      <Services />
+      <MyWork darkMode={darkMode} />
+      <Contact />
+      <Footer darkMode={darkMode}/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

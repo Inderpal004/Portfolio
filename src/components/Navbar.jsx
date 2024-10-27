@@ -1,10 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
-import logo from "/images/logo.png";
+import logoBlack from "/images/logo-black.png";
+import logoWhite from "/images/logo-white.png";
 import arrowIcon from "/images/arrow-icon.png";
+import arrowIconDark from "/images/arrow-icon-dark.png";
 import moonIcon from "/images/moon_icon.png";
 import headerBgColor from "/images/header-bg-color.png";
 import menuBlack from "/images/menu-black.png";
+import menuWhite from "/images/menu-white.png";
 import closeBlack from "/images/close-black.png";
+import closeWhite from "/images/close-white.png";
 import sunIcon from "/images/sun_icon.png";
 
 function Navbar({darkMode,toggleTheme}) {
@@ -32,10 +36,10 @@ function Navbar({darkMode,toggleTheme}) {
                 <img src={headerBgColor} alt="" className="w-full" />
             </div>
 
-            <nav ref={navRef} className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${scrolled ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm' : ''}`}>
-                <img src={logo} alt="logo" className="w-28 cursor-pointer mr-14" />
+            <nav ref={navRef} className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50  ${scrolled ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20' : ''}`}>
+                <img src={darkMode ? logoWhite : logoBlack} alt="logo" className="w-40 cursor-pointer mr-14" />
 
-                <ul ref={navLinks} className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${scrolled ? '' : 'bg-white shadow-sm bg-opacity-50'}`}>
+                <ul ref={navLinks} className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${scrolled ? '' : 'bg-white shadow-sm bg-opacity-50 dark:bg-transparent dark:border dark:border-white/50'}`}>
                     <li><a href="#top">Home</a></li>
                     <li><a href="#about">About me</a></li>
                     <li><a href="#services">Services</a></li>
@@ -51,10 +55,10 @@ function Navbar({darkMode,toggleTheme}) {
                         className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
                         href="#contact"
                     >
-                        Contact <img className="w-3" src={arrowIcon} alt="arrow-icon" />
+                        Contact <img className="w-3" src={darkMode ? arrowIconDark : arrowIcon} alt="arrow-icon" />
                     </a>
                     <button onClick={() => setOpenMenu(true)} className="block md:hidden ml-3">
-                        <img src={menuBlack} alt="menu" className="w-6" />
+                        <img src={darkMode ? menuWhite : menuBlack} alt="menu" className="w-6" />
                     </button>
                 </div>
 
@@ -63,10 +67,10 @@ function Navbar({darkMode,toggleTheme}) {
                     id="sideMenu"
                     className={`flex flex-col gap-4 py-20 px-10 fixed top-0 bottom-0 right-0 w-64 z-50 h-screen bg-rose-50 transition-transform duration-500 ease-in-out transform ${
                         openMenu ? 'translate-x-0' : 'translate-x-full'
-                    } md:hidden`}
+                    } md:hidden dark:bg-darkHover`}
                 >
                     <div className="absolute right-6 top-6">
-                        <img onClick={() => setOpenMenu(false)} src={closeBlack} alt="close" className="w-5 cursor-pointer" />
+                        <img onClick={() => setOpenMenu(false)} src={darkMode ? closeWhite : closeBlack} alt="close" className="w-5 cursor-pointer" />
                     </div>
 
                     <li><a onClick={() => setOpenMenu(false)} href="#top">Home</a></li>
