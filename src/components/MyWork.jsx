@@ -61,7 +61,7 @@ function MyWork({darkMode}) {
 
         </div>
 
-        <a href="#" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 dark:border-white dark:text-white dark:hover:bg-darkHover/50'>Show more <img src={darkMode ? rightArrowDark : rightArrow} alt="" className='w-4'/></a>
+        <a href="https://github.com/Inderpal004" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 dark:border-white dark:text-white dark:hover:bg-darkHover/50'>Show more <img src={darkMode ? rightArrowDark : rightArrow} alt="" className='w-4'/></a>
     </div>
   )
 }

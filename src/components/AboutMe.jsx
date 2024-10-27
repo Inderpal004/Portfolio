@@ -19,8 +19,6 @@ import devIcon from "/images/hacker.png";
 
 function AboutMe({ darkMode }) {
 
-    console.log(darkMode);
-
     return (
         <div id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
             <h4 className='text-center mb-2 text-lg'>Introduction</h4>
@@ -45,7 +43,7 @@ function AboutMe({ darkMode }) {
                         <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'>
                             <img src={darkMode ? codeIconDark : codeIcon} alt="" className='w-7 mt-3' />
                             <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>Languages</h3>
-                            <p className='text-gray-600 text-sm dark:text-white'>
+                            <p className='text-gray-600 text-sm dark:text-white/80'>
                                 HTML, CSS, Tailwind CSS, JavaScript, React Js, Next Js
                             </p>
                         </li>
@@ -53,13 +51,13 @@ function AboutMe({ darkMode }) {
                         <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'>
                             <img src={darkMode ? eduIconDark : eduIcon} alt="" className='w-7 mt-3' />
                             <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>Education</h3>
-                            <p className='text-gray-600 text-sm dark:text-white'>Bachelor's in Computer Applications</p>
+                            <p className='text-gray-600 text-sm dark:text-white/80'>Bachelor's in Computer Applications</p>
                         </li>
 
                         <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'>
                             <img src={darkMode ? projectIconDark : projectIcon} alt="" className='w-7 mt-3' />
                             <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>Projects</h3>
-                            <p className='text-gray-600 text-sm dark:text-white'>Built more than 5 projects</p>
+                            <p className='text-gray-600 text-sm dark:text-white/80'>Built more than 5 projects</p>
                         </li>
                     </ul>
 

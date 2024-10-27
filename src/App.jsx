@@ -23,7 +23,6 @@ function App() {
     setDarkMode((prevMode) => !prevMode);
   }
 
-  console.log("App.jsx",darkMode)
 
   return (
     <div className='overflow-x-hidden font-Outfit leading-7 dark:bg-darkTheme dark:text-white'>
