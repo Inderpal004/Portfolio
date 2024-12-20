@@ -44,7 +44,7 @@ function AboutMe({ darkMode }) {
                             <img src={darkMode ? codeIconDark : codeIcon} alt="" className='w-7 mt-3' />
                             <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>Languages</h3>
                             <p className='text-gray-600 text-sm dark:text-white/80'>
-                                HTML, CSS, Tailwind CSS, JavaScript, React Js, Next Js
+                                HTML, CSS, SCSS, Tailwind CSS, JavaScript, React Js, Next Js
                             </p>
                         </li>
 

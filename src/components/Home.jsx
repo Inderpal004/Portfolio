@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
-        <img src={profileImg} alt="" className='mt-7 rounded-full w-32 h-32 object-cover'/>
+        <img src={profileImg} alt="" className='sm:mt-7 rounded-full w-32 h-32 object-cover'/>
         <h3 className='flex items-center gap-2 text-xl md:text-2xl mb-2'>Hi! I'm Inderpal   <img src={handIcon} alt="" className='w-6'/> </h3>
         <h1 className='text-3xl sm:text-6xl lg:text-[55px]'>Frontend Web Developer from Barnala.</h1>
         <p className='max-w-2xl mx-auto'>I'm a frontend developer based in Barnala, Punjab, currently seeking opportunities to restart my career after a brief professional experience and a career break, eager to contribute, learn, and grow in web development.</p>
