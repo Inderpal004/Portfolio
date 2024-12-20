@@ -36,7 +36,7 @@ function AboutMe({ darkMode }) {
 
                 <div className='flex-1'>
                     <p className='mb-10 max-w-2xl'>
-                        I am a passionate frontend developer eager to kickstart my career. I look forward to gaining hands-on experience, contributing to impactful projects, and growing with dynamic organizations.
+                    I am a passionate frontend developer eager to relaunch my career. I aim to gain hands-on experience, contribute to meaningful projects, and grow with dynamic organizations, leveraging my skills and enthusiasm for web development.
                     </p>
 
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>

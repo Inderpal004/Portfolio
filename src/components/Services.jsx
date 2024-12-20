@@ -6,7 +6,7 @@ function Services() {
         <div id='services' className='w-full px-[12%] py-10 scroll-mt-20'>
             <h4 className='text-center mb-2 text-lg'>What i offer</h4>
             <h2 className='text-center text-5xl'>My services</h2>
-            <p className='text-center max-w-2xl mx-auto mt-5 mb-12'>I'm a frontend developer from Barnala, Punjab. I'm a fresher exploring opportunities to grow and learn.</p>
+            <p className='text-center max-w-2xl mx-auto mt-5 mb-12'>I'm a frontend developer from Barnala, Punjab, actively exploring opportunities to relaunch my career, grow my skills, and contribute to innovative web development projects.</p>
 
             <div className='grid grid-cols-auto gap-6 my-10'>
                 <div className='border cursor-pointer border-gray-400 rounded-lg px-8 py-12 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'>

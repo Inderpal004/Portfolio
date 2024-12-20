@@ -18,9 +18,9 @@ function Footer({darkMode}) {
             <p>© 2024 Inderpal. All rights reserved.</p>
 
             <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
-                <li><a href="https://github.com/Inderpal004">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/inderpal-singh-in40440/">Linkedin</a></li>
-                <li><a href="https://x.com/i_am_inderpal">Twitter</a></li>
+                <li><a target='__blank' href="https://github.com/Inderpal004">Github</a></li>
+                <li><a target='__blank' href="https://www.linkedin.com/in/inderpal-singh-in40440/">Linkedin</a></li>
+                <li><a target='__blank' href="https://x.com/i_am_inderpal">Twitter</a></li>
             </ul>
         </div>
     </div>
