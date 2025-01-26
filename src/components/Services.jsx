@@ -30,7 +30,7 @@ function Services() {
                         <i className="ri-window-fill text-white text-[20px]"></i>
                     </div>
                     <h3 className='text-lg my-4 text-gray-700 dark:text-white'>Front-End Development</h3>
-                    <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>Specify your expertise in front-end technologies such as HTML, CSS, and JavaScript to create interactive and dynamic web applications...</p>
+                    <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>Specialize in front-end technologies like HTML, CSS, and JavaScript to build interactive and dynamic single-page applications...</p>
                     <a href="#" className='flex items-center gap-2 text-sm mt-5'>Read more <img src={rightArrow} alt="" className='w-4' /></a>
                 </div>
             </div>
