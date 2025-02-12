@@ -21,7 +21,7 @@ A showcase of my web development skills, projects, and professional journey as a
 │   └── App.js  
 ├── public  
 │   ├── images  
-│   └── inderpal-cv.pdf  
+│   └── inder-resume.pdf  
 ├── package.json  
 ├── README.md  
 └── .gitignore  
