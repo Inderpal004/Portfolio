@@ -1,5 +1,5 @@
 import React from 'react';
-import userImage from "/images/pf2.jpeg";
+import userImage from "/images/mypic2.png";
 import codeIcon from "/images/code-icon.png";
 import codeIconDark from "/images/code-icon-dark.png";
 import eduIcon from "/images/edu-icon.png";
