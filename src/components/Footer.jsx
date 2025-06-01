@@ -8,9 +8,9 @@ function Footer({darkMode}) {
   return (
     <div className='mt-20'>
         <div className='text-center'>
-            <img src={darkMode ? logoWhite : logoBlack} alt="" className='w-60 mx-auto mb-2'/>
+            <img loading="lazy" src={darkMode ? logoWhite : logoBlack} alt="logo" className='w-60 mx-auto mb-2'/>
             <div className='w-max flex items-center gap-2 mx-auto'>
-                <img src={darkMode ? mailIconDark : mailIcon} alt="" className='w-6'/> inderpalsingh4040@gmail.com
+                <img loading="lazy" src={darkMode ? mailIconDark : mailIcon} alt="mail-icon" className='w-6'/> inderpalsingh4040@gmail.com
             </div>
         </div>
 
@@ -18,9 +18,9 @@ function Footer({darkMode}) {
             <p>© 2025 Inderpal. All rights reserved.</p>
 
             <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
-                <li><a target='__blank' href="https://github.com/Inderpal004">Github</a></li>
-                <li><a target='__blank' href="https://www.linkedin.com/in/inderpal-singh-in40440/">Linkedin</a></li>
-                <li><a target='__blank' href="https://x.com/i_am_inderpal">Twitter</a></li>
+                <li><a target='__blank' aria-label='github-link' href="https://github.com/Inderpal004">Github</a></li>
+                <li><a target='__blank' aria-label='linkedin-link' href="https://www.linkedin.com/in/inderpal-singh-in40440/">Linkedin</a></li>
+                <li><a target='__blank' aria-label='twitter-link' href="https://x.com/i_am_inderpal">Twitter</a></li>
             </ul>
         </div>
     </div>

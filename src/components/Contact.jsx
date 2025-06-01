@@ -40,7 +40,7 @@ function Contact() {
     <>
     <Toaster />
     <div id='contact' className={`w-full px-[12%] py-10 scroll-mt-20 bg-[url('/images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none`}>
-      <h4 className='text-center mb-2 text-lg'>Connect with me</h4>
+      <h3 className='text-center mb-2 text-lg'>Connect with me</h3>
       <h2 className='text-center text-5xl'>Get in touch</h2>
       <p className='text-center max-w-2xl mx-auto mt-5 mb-12'>I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
 
@@ -50,7 +50,7 @@ function Contact() {
           <input type="email" name="email" required placeholder='Enter your email' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/50' />
         </div>
         <textarea rows="6" name="message" required placeholder='Enter your message' className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/50'></textarea>
-        <button type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:text-white dark:bg-transparent dark:border dark:border-white dark:hover:bg-darkHover/50'> {isSubmitting ? 'Submitting...' : 'Submit now'} {isSubmitting ? "" : <img src={rightArrowWhite} alt="" className='w-4 ' />}</button>
+        <button type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:text-white dark:bg-transparent dark:border dark:border-white dark:hover:bg-darkHover/50'> {isSubmitting ? 'Submitting...' : 'Submit now'} {isSubmitting ? "" : <img loading="lazy" src={rightArrowWhite} alt="" className='w-4 ' />}</button>
       </form>
     </div>
     </>
